@@ -25,23 +25,18 @@
 /****************************/
 @import "animate.css";
 @import "font-awesome.min.css";
-@import "pe-icon-7-stroke.css";
-@import "et-line-font.css";
+@import "pe-icon-7-stroke.css";	
 @import "bootstrap.min.css";
-@import "owl.carousel.css";
-@import "owl.theme.default.min.css";
-@import "inputtext.css";
 @import "filter.css";
 @import "default-skin/default-skin.css";
-@import "lightgallery.css";
 
 $primery_font_color:#303133;
 $secondery_color:#fff;
 $background_color:#303133;
 
 
-$font: 'Poppins', sans-serif;
-$secondery_font:  'Hind', sans-serif;
+$font: sans-serif;
+$secondery_font:  sans-serif;
 
 @mixin background-opacity($color, $opacity: 0.6) {
     background: $color; /* The Fallback */
@@ -430,7 +425,8 @@ p{
 
 /********Body Sec CSS********/
 .fixed-bg {
-	background: rgba(0, 0, 0, 0) url("../img/mainbg.jpg") no-repeat;
+	// background: rgba(0, 0, 0, 0) url("../img/mainbg.jpg") no-repeat;
+  background-color: #7F7E85;
 	animation: 60s ease 0s normal none infinite back_ken;
 	-webkit-animation: 60s ease 0s normal none infinite back_ken;
 	image-rendering: optimizeQuality;
