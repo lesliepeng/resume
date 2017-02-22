@@ -686,7 +686,7 @@ a.goto-social, a.goto-social:hover {
 /********Education Sec CSS********/
 .education-wrap .qualfication-wrap {
   margin-top: 42px; }
-  .education-wrap .qualfication-wrap .qualfication:nth-child(even) {
+  .education-wrap .qualfication-wrap .qualfication:nth-child(odd) {
     background: white; }
 .education-wrap .qualfication {
   border-bottom: 1px solid rgba(48, 49, 51, 0.1);

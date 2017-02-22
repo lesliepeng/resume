@@ -25,7 +25,7 @@
 /****************************/
 @import "animate.css";
 @import "font-awesome.min.css";
-@import "pe-icon-7-stroke.css";	
+@import "pe-icon-7-stroke.css";
 @import "bootstrap.min.css";
 @import "filter.css";
 @import "default-skin/default-skin.css";
@@ -771,7 +771,7 @@ a.goto-social,a.goto-social:hover {
 .education-wrap {
 	.qualfication-wrap {
 		margin-top:42px;
-		.qualfication:nth-child(even) {
+		.qualfication:nth-child(odd) {
 			background: rgba(255,255,255,1);
 		}
 	}
