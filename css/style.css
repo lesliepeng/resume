@@ -630,13 +630,12 @@ a.goto-social, a.goto-social:hover {
 .services-icon-wrap span {
   display: block; }
   .services-icon-wrap span.key-fact {
-    font-size: 14px;
-    font-family: sans-serif;
+    font-size: 15px;
     color: #303133;
     letter-spacing: .5px;
-    text-transform: uppercase;
-    margin-top: 34px;
-    font-weight: 500; }
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-weight: bold; }
 .services-icon-wrap .icon {
   color: #6f6f71;
   font-size: 60px;
@@ -739,15 +738,6 @@ a.goto-social, a.goto-social:hover {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .5px; }
-.experience-wrap .job-desn {
-  display: block; }
-.experience-wrap .job-desn {
-  color: #444;
-  font-family: sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  padding-bottom: 5px;
-  text-transform: capitalize; }
 .experience-wrap .timeline-st {
   background: rgba(48, 49, 51, 0.15);
   margin-left: 7px;
@@ -778,6 +768,107 @@ a.goto-social, a.goto-social:hover {
   opacity: 1 !important; }
 .experience-wrap .exp-timeline.timeline-active .timeline-st:after {
   border: 3px solid #ed1a60; }
+
+.app-item {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 10px; }
+  .app-item .app-icon {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px; }
+  .app-item .app-intro {
+    flex: 1;
+    width: 0%;
+    align-items: flex-start; }
+    .app-item .app-intro .app-name {
+      font-weight: bold;
+      margin-bottom: 5px; }
+      .app-item .app-intro .app-name a.btn {
+        height: auto;
+        padding: 4px 6px;
+        margin-left: 20px;
+        background-color: #DCB000; }
+    .app-item .app-intro .app-desc {
+      font-weight: normal; }
+
+/********Project Sec CSS********/
+.project-gallery a {
+  display: block;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 100%;
+  position: relative;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s; }
+  .project-gallery a img {
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    image-rendering: optimizeQuality; }
+  .project-gallery a .hover-cap {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    background: #fff none repeat scroll 0 0;
+    bottom: 0;
+    color: black;
+    height: 65px;
+    padding-top: 25px;
+    left: 0;
+    overflow: hidden;
+    perspective: 1px;
+    position: absolute;
+    text-align: center;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-transform: uppercase;
+    -moz-transform: translateY(75px);
+    -o-transform: translateY(75px);
+    -ms-transform: translateY(75px);
+    -webkit-transform: translateY(75px);
+    transform: translateY(75px);
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    width: 100%; }
+  .project-gallery a:hover {
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2); }
+    .project-gallery a:hover img {
+      -moz-transform: translateY(-20px);
+      -o-transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px); }
+    .project-gallery a:hover .hover-cap {
+      -moz-transform: translateY(0);
+      -o-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -webkit-transform: translateY(0);
+      transform: translateY(0); }
+
+.lg-sub-html h6 {
+  color: #303133;
+  margin-bottom: 0; }
 
 /********Footer Sec CSS********/
 @-webkit-keyframes blinking {

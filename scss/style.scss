@@ -180,6 +180,7 @@ p{
 .force-UTF-8{
     content: "¡";
 }
+
 /****************************/
 /** Main **/
 /****************************/
@@ -705,13 +706,12 @@ a.goto-social,a.goto-social:hover {
 	span {
 		display:block;
 		&.key-fact {
-			font-size:14px;
-			font-family:$secondery_font;
+			font-size:15px;
 			color:$primery_font_color;
 			letter-spacing:.5px;
-			text-transform:uppercase;
-			margin-top: 34px;
-			font-weight:500;
+			margin-top: 20px;
+      margin-bottom: 5px;
+			font-weight:bold;
 		}
 	}
 	.icon {
@@ -838,17 +838,6 @@ a.goto-social,a.goto-social:hover {
 		text-transform:uppercase;
 		letter-spacing:.5px;
 	}
-	.job-desn {
-		display:block;
-	}
-	.job-desn {
-		color:#444;
-		font-family:$secondery_font;
-		font-size:16px;
-		font-weight:500;
-		padding-bottom: 5px;
-		text-transform:capitalize;
-	}
 
 	.timeline-st {
 		background: rgba(48,49,51,0.15);
@@ -892,6 +881,98 @@ a.goto-social,a.goto-social:hover {
 			}
 		}
 	}
+}
+.app-item{
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  .app-icon{
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+  }
+  .app-intro{
+    flex: 1;
+    width: 0%;
+    align-items: flex-start;
+    .app-name{
+      font-weight: bold;
+      margin-bottom: 5px;
+      a.btn {
+        height:auto;
+        padding: 4px 6px;
+        margin-left: 20px;
+        background-color: #DCB000;
+
+      }
+    }
+
+    .app-desc{
+      font-weight: normal;
+    }
+  }
+}
+
+
+/********Project Sec CSS********/
+.project-gallery {
+	a {	display:block;
+		overflow:hidden;
+		 box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+		-webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+		-moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+		z-index: 1;
+		width: 100%;
+		position:relative;
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+		backface-visibility: hidden;
+		-webkit-backface-visibility:hidden;
+		@include transition(all 0.4s ease 0s);
+		img {
+			@include transform(translateY(0));
+			@include transition(all 0.4s ease 0s);
+			image-rendering: optimizeQuality;
+		}
+		.hover-cap {
+			font-size: 12px;
+			letter-spacing: 0.5px;
+			text-transform: uppercase;
+			font-weight: 500;
+			background: #fff none repeat scroll 0 0;
+			bottom: 0;
+			color: black;
+			height: 65px;
+			padding-top: 25px;
+			left: 0;
+			overflow: hidden;
+			perspective: 1px;
+			position: absolute;
+			text-align: center;
+			border-bottom-right-radius:5px;
+			border-bottom-left-radius:5px;
+			text-transform: uppercase;
+			@include transform(translateY(75px));
+			@include transition(all 0.4s ease 0s);
+			width: 100%;
+		}
+		&:hover {
+			box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+		  -webkit-box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+		  -moz-box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+		  img {
+				@include transform(translateY(-20px));
+			}
+			.hover-cap {
+				@include transform(translateY(0));
+			}
+		}
+	}
+
+}
+.lg-sub-html h6 {
+   color:$primery_font_color;
+   margin-bottom:0;
 }
 
 

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link rel="stylesheet" href="css/gallery_style.css">
+    <title>Leslie</title>
+
+</head>
+<body ng-controller="Registe">
+
+    <div class="container">
+      <div class="project-intro">
+        <div ng-if="index == 0">
+          <p>鬼畜（原名鬼畜输入法）是输入一句话就能自动生成鬼畜小视频的现象级产品。</p>
+          <p>我作为产品经理参与了该项目从无到有的整个过程，经过上线后的多次优化和调整，在2016年春节期间，日活达到50w+,登上App Store
+          总榜单第二名。</p>
+          <p>以下仅展示“鬼畜拜年包”的拜年功能的UX和UI设计。</p>
+        </div>
+        <div ng-if="index == 1">
+          <p>鹿影是一个短视频类社交应用，初衷是让用户能很简单的为自己拍摄的小视频添加像“跑男”等综艺节目一样的特效字幕。</p>
+          <p>以下为UX设计和Web官网设计，<a href="http://resume-for-zhihu.rivercross2015.com/candy-web/index.html">点击查看Web的demo效果</a></p>。
+        </div>
+        <div ng-if="index == 2">
+
+        </div>
+        <div ng-if="index == 3">
+
+        </div>
+        <img class="gallery_detail" src="{{item}}" ng-repeat="item in items"/>
+      </div>
+    </div>
+
+
+
+
+
+    <script src="script/angular.min.js"></script>
+    <script type="text/javascript" src="script/md5.js"></script>
+    <script type="text/javascript" src="script/fingerprintjs.js"></script>
+    <script type="text/javascript" src="script/app.js"></script>
+
+</body>
+</html>

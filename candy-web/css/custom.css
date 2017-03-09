@@ -1,0 +1,264 @@
+@-webkit-keyframes rotation360 {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes rotation360 {
+    from {
+        -moz-transform: rotate(0deg)
+    }
+
+    to {
+        -moz-transform: rotate(360deg)
+    }
+}
+
+@-ms-keyframes rotation360 {
+    from {
+        -ms-transform: rotate(0deg)
+    }
+
+    to {
+        -ms-transform: rotate(360deg)
+    }
+}
+
+@-o-keyframes rotation360 {
+    from {
+        -o-transform: rotate(0deg)
+    }
+
+    to {
+        -o-transform: rotate(360deg)
+    }
+}
+
+@keyframes rotation360 {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes rotation-360 {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(-360deg)
+    }
+}
+
+@-moz-keyframes rotation-360 {
+    from {
+        -moz-transform: rotate(0deg)
+    }
+
+    to {
+        -moz-transform: rotate(-360deg)
+    }
+}
+
+@-ms-keyframes rotation-360 {
+    from {
+        -ms-transform: rotate(0deg)
+    }
+
+    to {
+        -ms-transform: rotate(-360deg)
+    }
+}
+
+@-o-keyframes rotation-360 {
+    from {
+        -o-transform: rotate(0deg)
+    }
+
+    to {
+        -o-transform: rotate(-360deg)
+    }
+}
+
+@keyframes rotation-360 {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(-360deg)
+    }
+}
+
+@-webkit-keyframes floating {
+    0% {
+        top: 0px
+    }
+
+    50% {
+        top: 25px
+    }
+
+    100% {
+        top: 0px
+    }
+}
+
+@-moz-keyframes floating {
+    0% {
+        top: 0px
+    }
+
+    50% {
+        top: 25px
+    }
+
+    100% {
+        top: 0px
+    }
+}
+
+@-ms-keyframes floating {
+    0% {
+        top: 0px
+    }
+
+    50% {
+        top: 25px
+    }
+
+    100% {
+        top: 0px
+    }
+}
+
+@-o-keyframes floating {
+    0% {
+        top: 0px
+    }
+
+    50% {
+        top: 25px
+    }
+
+    100% {
+        top: 0px
+    }
+}
+
+@keyframes floating {
+    0% {
+        top: 0px
+    }
+
+    50% {
+        top: 25px
+    }
+
+    100% {
+        top: 0px
+    }
+}
+
+.pause-anim:hover {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -ms-animation-play-state: paused;
+    -o-animation-play-state: paused
+}
+
+.rot-360-r-loop {
+    -webkit-animation: rotation360 1.2s infinite linear;
+    -moz-animation: rotation360 1.2s infinite linear;
+    -ms-animation: rotation360 1.2s infinite linear;
+    -o-animation: rotation360 1.2s infinite linear
+}
+
+.rot-360-l-loop {
+    -webkit-animation: rotation-360 1.2s infinite linear;
+    -moz-animation: rotation-360 1.2s infinite linear;
+    -ms-animation: rotation-360 1.2s infinite linear;
+    -o-animation: rotation-360 1.2s infinite linear
+}
+
+.rot-360-pingpong-loop {
+    -webkit-animation: rotation360 1.2s infinite linear alternate;
+    -moz-animation: rotation360 1.2s infinite linear alternate;
+    -ms-animation: rotation360 1.2s infinite linear alternate;
+    -o-animation: rotation360 1.2s infinite linear alternate
+}
+
+.rot-360-r:hover {
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg)
+}
+
+.rot-360-r {
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out
+}
+
+.rott:hover {
+    -webkit-animation: rotation360 1.2s infinite linear;
+    -moz-animation: rotation360 1.2s infinite linear;
+    -ms-animation: rotation360 1.2s infinite linear;
+    -o-animation: rotation360 1.2s infinite linear
+}
+
+.rot-360-l-loop-hover:hover {
+    -webkit-animation: rotation-360 1.2s infinite linear;
+    -moz-animation: rotation-360 1.2s infinite linear;
+    -ms-animation: rotation-360 1.2s infinite linear;
+    -o-animation: rotation-360 1.2s infinite linear
+}
+
+.lev{
+    -webkit-animation: floating 2s infinite linear;
+    -moz-animation: floating 2s infinite linear;
+    -ms-animation: floating 2s infinite linear;
+    -o-animation: floating 2s infinite linear;
+
+}
+
+.stretch-width-loop {
+    -webkit-animation: stretchwidthloop 3s infinite linear;
+    -moz-animation: stretchwidthloop 3s infinite linear;
+    -ms-animation: stretchwidthloop 3s infinite linear;
+    -o-animation: stretchwidthloop 3s infinite linear
+}
+
+
+/* Float */
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
